@@ -1,6 +1,6 @@
 var menuButton = document.getElementById("menu");
 var sidemenu = document.getElementById("side");
-var isOpened = true;
+var isOpened = false;
 var section = document.getElementById("sect")
 
 console.log(menuButton.style.left);
