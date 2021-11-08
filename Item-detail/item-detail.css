@@ -203,3 +203,36 @@ ul li:hover a {
   color: white;
   padding: 10px 20px;
 }
+
+/*row and column*/
+.col-3 {width: 25%;}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*footer*/
+footer.footClass {
+  background-color: #666;
+  padding-left: 10%;
+}
+
+footer.footClass h1 {
+  color: white;
+  font-size: 35px;
+}
+
+footer.footClass ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+footer.footClass ul li {
+  color: white;
+  font-size: 22px;
+  line-height: 1.2;;
+}
