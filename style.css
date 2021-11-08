@@ -156,6 +156,15 @@ button.learnMore {
     margin: auto;
 }
 
+.checkoutClass {
+    float: right;
+}
+
+button.checkoutButtons {
+    display: inline-block;
+    font-size: 20px;
+}
+
 .row::after {
     display: table;
     clear: both;
