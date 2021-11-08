@@ -10,27 +10,20 @@
 <body>
   <script src="../quanScript.js" defer></script>
   <!-- header -->
-  <div id="header">
-    <img id = "menu" src="images/three-lines.png">
-    <h1>My computer</h1>
-    <div id = "in-search">
-      <input id = "search">
-    </div>
-    <a href="#search"><img id = "img-search" src="images/search.png"></a>
-      
-    <div class="logo logo-first">
-      <div>
-        <a href="#cart"><img src="images/your-cart.png"></a>
-        <p>Your cart</p>
-      </div>
-    </div>
-    <div class="logo">
-      <div>
-        <a href="#personal information"><img src="images/person-logo.png"></a>
-        <p>Name</p>
-      </div>
-    </div>
-  </div>
+  <nav>
+    <ul class="topnav" id="dropdownClick">
+        <li id="menu"><a href="#something">&#9776;</a></li>
+        <li class="title">MYCOMPUTER</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="topnav-right"><a href="#signup">Sign up</a></li>
+        <li class="topnav-right"><a href="#signin">Sign in</a></li>
+        <!--javascript:void(0) make path undefined, therefore make the menu stay when click-->
+        <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+</nav>
 
   <!-- this was taken from index -->
   <div class="sidebar" id="side">
