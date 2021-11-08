@@ -54,9 +54,8 @@ ul.topnav li.dropdownIcon {
 }
 
 .sidebar {
-  z-index: 1;
   position: fixed;
-  left: 0px;
+  left: -230px;
   width: 230px;
   height: 100%;
   background-color: gainsboro;
@@ -88,6 +87,7 @@ ul.topnav li.dropdownIcon {
   border-bottom: 1px solid black;
   transition: .4s;/*make the button float when hover*/
 }
+
 ul li:hover a {
   padding-left: 20px;
 }
@@ -95,6 +95,7 @@ ul li:hover a {
 
 /* product images */
 #product-img{
+  padding-top: 50px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -103,7 +104,7 @@ ul li:hover a {
 }
   #return{
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 0;
     width: 80px;
     height: 80px;

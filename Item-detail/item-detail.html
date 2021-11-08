@@ -10,12 +10,12 @@
 <body>
   <script src="../quanScript.js" defer></script>
   <!-- header -->
-  <nav>
+  <nav style = "position:fixed; z-index: 1;">
     <ul class="topnav" id="dropdownClick">
         <li id="menu"><a href="#something">&#9776;</a></li>
         <li class="title">MYCOMPUTER</li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#new">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
         <li class="topnav-right"><a href="#signup">Sign up</a></li>
@@ -23,10 +23,10 @@
         <!--javascript:void(0) make path undefined, therefore make the menu stay when click-->
         <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
     </ul>
-</nav>
+  </nav>
 
   <!-- this was taken from index -->
-  <div class="sidebar" id="side">
+  <div class="sidebar" id="side" style="margin-top: 43px;">
     <ul id="list">
         <li><a href="">Components</a></li>
         <li><a href="">Computer systems</a></li>
