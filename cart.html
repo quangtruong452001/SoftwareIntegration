@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My WEBSITE</title>
+</head>
+<body>
+    <nav style = "position: fixed">
+        <ul class="topnav" id="dropdownClick">
+            <li id="menu"><a href="#something">&#9776;</a></li>
+            <li class="title">MYCOMPUTER</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#user">User</a></li>
+            <li class="topnav-right"><a href="#yourcart">Your cart</a></li>
+            <!--javascript:void(0) make path undefined, therefore make the menu stay when click-->
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar" id="side" style="margin-top:43px;">
+        <ul id="list">
+            <li><a href="">Components</a></li>
+            <li><a href="">Computer systems</a></li>
+            <li><a href="">Electronics</a></li>
+            <li><a href="">Gaming</a></li>
+            <li><a href="">Networking</a></li>
+            <li><a href="">Software</a></li>
+            <li><a href="">Office solutions</a></li>
+        </ul>
+    </div>
+    <section id="sect" style="padding-top: 50px;">
+    
+    
+    <div style="display: flex;">
+        <!-- first item -->
+        <div>
+            <div style = "width:80%">
+                <div style="display: flex">
+                    <!-- image -->
+                    <div>
+                        <img width="300" height="220" src="picture/amdpicture.jpg" alt="" />
+                    </div>
+
+                    <div>
+                        <h3>AMD Ryzen 5 5600X - Ryzen 5 5000 Series Vermeer (Zen 3) 6-Core 3.7 GHz  Socket AM4 65W Desktop Processor - 100-100000065BOX</h3>
+                        <div style="display: flex; justify-content: space-between">
+                            <input></input>
+                            <h2>309.00$</h2>
+                        </div>
+                        <button style = "display: block; font-size: 16px; margin-left:auto">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- second item -->
+            <div style = "width:80%">
+                <div style="display: flex">
+                    <!-- image -->
+                    <div>
+                        <img width="300" height="220" src="picture/desktopharddrive.jpg" alt="" />
+                    </div>
+
+                    <div>
+                        <h3>WD Elements 12TB USB 3.0 Desktop Hard Drive Black WDBWLG0120HBK-NESN</h3>
+                        <div style="display: flex; justify-content: space-between">
+                            <input></input>
+                            <h2>$499.98</h2>
+                        </div>
+                        <button style = "display: block; font-size: 16px; margin-left:auto">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- summary -->
+        <div style = "width:39%">
+            <h2>Summary</h2>
+            <div style="display: flex; justify-content: space-between">
+                <p>Item(s)</p>
+                <h2>$324.99</h2>
+            </div>
+            <div style="display: flex; justify-content: space-between">
+                <p>Warranty & Service</p>
+                <h2>$44.99</h2>
+            </div>
+            <div style="display: flex; justify-content: space-between">
+                <p>Est.Delivery</p>
+                <h2>$0.00</h2>
+            </div>
+            <div style="display: flex; justify-content: space-between">
+                <p>Est.Total</p>
+                <h2>$369.98</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footClass">
+        <div class="row">
+            <div class="col-3 mobileRow">
+                <h3>CUSTOMER SERVICE</h3>
+                <ul>
+                    <li>Help center</li>
+                    <li>Track an Order</li>
+                    <li>Return an item</li>
+                    <li>Return Policy</li>
+                    <li>Privacy & Security</li>
+                    <li>Feedback</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileRow">
+                <h3>MY ACCOUNT</h3>
+                <ul>
+                    <li>Login/Register</li>
+                    <li>Order History</li>
+                    <li>Return History</li>
+                    <li>Adress Book</li>
+                    <li>Wish list</li>
+                    <li>Email Notification</li>
+                    <li>Subscriptions Orders</li>
+                    <li>Auto Notifications</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileRow">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileRow">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!--Javascript code to make drop down menu drop-->
+    <script>
+        function dropdownMenu()
+        {
+            var x = document.getElementById("dropdownClick");
+            if(x.className === "topnav")
+            {
+                x.className += " responsive";
+                /*Change topnav to topnav.responsive*/
+            }else
+            {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="quanScript.js"></script>
+</body>
+</html>
