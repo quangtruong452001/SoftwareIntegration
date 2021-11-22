@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- GGfont -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <link rel="icon" href="picture/icon.png">
+    
+    <title>My WEBSITE</title>
+</head>
+<body>
+    <nav style = "position: fixed">
+        <ul class="topnav" id="dropdownClick">
+            <li id="menu"><a href="#something">&#9776;</a></li>
+            <li class="title">MYCOMPUTER</li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="login.html">User</a></li>
+            <li class="topnav-right"><a href="cart.html">Your cart</a></li>
+            <!--javascript:void(0) make path undefined, therefore make the menu stay when click-->
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar" id="side" style="margin-top:43px;">
+        <ul id="list">
+            <li><a href="">Components</a></li>
+            <li><a href="">Computer systems</a></li>
+            <li><a href="">Electronics</a></li>
+            <li><a href="">Gaming</a></li>
+            <li><a href="">Networking</a></li>
+            <li><a href="">Software</a></li>
+            <li><a href="">Office solutions</a></li>
+        </ul>
+    </div>
+    <section id="sect" style="padding-top: 50px;">
+    
+    
+    <div style="display: flex;">
+        <!-- first item -->
+        <div style = "width:80%">
+            <div style="display: flex">
+                <!-- image -->
+                <div>
+                    <img width="300" height="220" src="picture/amdpicture.jpg" alt="" />
+                </div>
+
+                <div>
+                    <div style="display: flex; justify-content: space-between">
+                        <h3 style = "width:60%">AMD Ryzen 5 5600X - Ryzen 5 5000 Series Vermeer (Zen 3) 6-Core 3.7 GHz  Socket AM4 65W Desktop Processor - 100-100000065BOX</h3>
+                        <h2>309.00$</h2>
+                    </div>
+
+                    <div style = "width:90%; margin-left: auto; justify-content: space-between">
+                        <div style = "width:20%; display: inline-block;">
+                            <img width="90" height="60" src="picture/protectionPlan.jpg" alt="" />
+                        </div>
+                        <div style = "display: flex; justify-content: space-between">
+                            <h3 style = "width:45%">3 Year Hard Drive Protection Plan</h3>
+                            <h2>28.99$</h2>
+                        </div>
+                    </div>
+                    <span class="checkoutClass">
+                        <button class="checkoutButtons"><a href="Item-detail/item-detail.html">CONTINUE SHOPPING</a></button>
+                        <button class="checkoutButtons"><a href="cart.html">CHECKOUT</a></button>
+                    <span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="footClass">
+        <div class="row">
+            <div class="col-3 mobileRow">
+                <h1>Customer Service</h1>
+                <ul>
+                    <li>Help center</li>
+                    <li>Return policy</li>
+                    <li>Privacy and security</li>
+                    <li>Feed back</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileRow">
+                <h1>My Account</h1>
+                <ul>
+                    <li>Login/Register</li>
+                    <li>Order history</li>
+                    <li>Wish list</li>
+                    <li>Email notifications</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileRow">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                    <li>Policies</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileRow">
+                <h1>Product</h1>
+                <ul>
+                    <li>Order place</li>
+                    <li>Product supplier</li>
+                    <li>Supplier info</li>
+                    <li>Complaint</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!--Javascript code to make drop down menu drop-->
+    <script>
+        function dropdownMenu()
+        {
+            var x = document.getElementById("dropdownClick");
+            if(x.className === "topnav")
+            {
+                x.className += " responsive";
+                /*Change topnav to topnav.responsive*/
+            }else
+            {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="quanScript.js"></script>
+</body>
+</html>

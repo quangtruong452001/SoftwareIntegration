@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="item-detail.css">
+  <!-- GGfont -->
+  <link
+  href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap"
+  rel="stylesheet"
+/>
+
+  <!-- icon -->
+  <link rel="icon" href="../picture/icon.png">
+
+  <title>Document</title>
+</head>
+<body>
+  <script src="../quanScript.js" defer></script>
+  <!-- header -->
+  <nav style = "position:fixed; z-index: 1;">
+    <ul class="topnav" id="dropdownClick">
+        <li id="menu"><a href="#something">&#9776;</a></li>
+        <li class="title">MYCOMPUTER</li>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="#new">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="topnav-right"><a href="../login.html">user</a></li>
+        <li class="topnav-right"><a href="../cart.html">your cart</a></li>
+        <!--javascript:void(0) make path undefined, therefore make the menu stay when click-->
+        <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+  </nav>
+
+  <!-- this was taken from index -->
+  <div class="sidebar" id="side" style="margin-top: 43px;">
+    <ul id="list">
+        <li><a href="">Components</a></li>
+        <li><a href="">Computer systems</a></li>
+        <li><a href="">Electronics</a></li>
+        <li><a href="">Gaming</a></li>
+        <li><a href="">Networking</a></li>
+        <li><a href="">Software</a></li>
+        <li><a href="">Office solutions</a></li>
+    </ul>
+  </div>
+  <section id = "sect">
+  <!-- end -->
+
+    <!-- product images -->
+    <div id="product-img">
+      <a href="#return to home"><img id = "return" src="images/return-home.png"></a>
+      <p>ASUS UX463FA-AI013T 14" Touch Core i5 Notebook Win 10 Home</p>
+      <img id = "product" src="images/product-img.png">
+      <div>
+        <p>2799$</p>
+      </div>
+    </div>
+
+    <!-- product- detail -->
+    <div id="product-detail">
+      <p> Intel Core i5-10210U Processor 1.6 GHz (6MB Cache, up to 4.2 GHz) </p>
+      <p> 14" FHD 1920x1080 16:9 Touch Wide View Display </p> 
+      <p> 8GB DDR3 onboard, 512GB M.2 PCIe NVMe SSD </p>
+      <p> Intel UHD Graphics 620, HDMI, HD IR Camera, 802.11ax+Bluetooth 5.0 (Dual band) 2 </p>
+    </div>
+
+    <!-- Add to cart -->
+    <div id="to-cart">
+      <a href="../addToCart.html">
+        <button id = "add">
+          <img src="images/add-to-cart.png">
+          <p>Add to cart</p>
+        </button>
+      </a>
+    </div>
+
+    <!-- Related product -->
+    <div id="related-header">
+      <div>Similar item</div>
+      <div>Same franchise</div>
+      <div>Related item</div>
+    </div>
+    <div id = "related-product">
+      <div class="rproduct">
+        <div>
+          <p>Alliance IEM Divider Gaming Desktop</p>
+        </div>
+        <img src="images/desktop1.png">
+        <h2>$1999</h2>
+      </div>
+      <div class="rproduct">
+        <div>
+          <p>Alliance IEM Divider Gaming Desktop</p>
+        </div>
+        <img src="images/desktop1.png">
+        <h2>$1999</h2>
+      </div>
+      <div class="rproduct">
+        <div>
+          <p>Alliance IEM Divider Gaming Desktop</p>
+        </div>
+        <img src="images/desktop1.png">
+        <h2>$1999</h2>
+      </div>
+      <div class="rproduct">
+        <div>
+          <p>Alliance IEM Divider Gaming Desktop</p>
+        </div>
+        <img src="images/desktop1.png">
+        <h2>$1999</h2>
+      </div>
+    </div>
+
+    <!-- final 
+    <div id="final">
+      <div>
+        <h1>Customer service</h1>
+        <br>
+        <p>Help center</p>
+        <p>Return policy</p>
+        <p>Privacy and security</p>
+        <p>Feed back</p>
+      </div>
+      <div>
+        <h1>Customer service</h1>
+        <br>
+        <p>Lorgin register</p>
+        <p>Order history</p>
+        <p>Email notification</p>
+        <p>Current cuopon</p>
+        <p>Subcribe order</p>
+      </div>
+      <div>
+        <h1>Customer service</h1>
+        <br>
+        <p>Help center</p>
+        <p>Return policy</p>
+        <p>Privacy and security</p>
+        <p>Feed back</p>
+      </div>
+      <div>
+        <h1>Company information</h1>
+        <br>
+        <p>About us</p>
+        <p>Award and Ranking</p>
+        <p>Working hours and location</p>
+      </div>
+    </div>
+  </section>
+  -->
+  <!--Footer-->
+  <footer class="footClass">
+    <div class="row">
+        <div class="col-3 mobileRow">
+            <h1>Customer Service</h1>
+            <ul>
+                <li>Help center</li>
+                <li>Return policy</li>
+                <li>Privacy and security</li>
+                <li>Feed back</li>
+            </ul>
+        </div>
+        <div class="col-3 mobileRow">
+            <h1>My Account</h1>
+            <ul>
+                <li>Login/Register</li>
+                <li>Order history</li>
+                <li>Wish list</li>
+                <li>Email notifications</li>
+            </ul>
+        </div>
+        <div class="col-3 mobileRow">
+            <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Careers</li>
+                <li>Policies</li>
+            </ul>
+        </div>
+        <div class="col-3 mobileRow">
+            <h1>Product</h1>
+            <ul>
+                <li>Order place</li>
+                <li>Product supplier</li>
+                <li>Supplier info</li>
+                <li>Complaint</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
